@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/oguerra-portfolio/static/css/main.2b865a00.css",
+    "main.js": "/oguerra-portfolio/static/js/main.ee2809dc.js",
+    "static/media/distance-calculator-svg.svg": "/oguerra-portfolio/static/media/distance-calculator-svg.f2d994845e780aa609e6c6e9471ec8dd.svg",
+    "index.html": "/oguerra-portfolio/index.html",
+    "main.2b865a00.css.map": "/oguerra-portfolio/static/css/main.2b865a00.css.map",
+    "main.ee2809dc.js.map": "/oguerra-portfolio/static/js/main.ee2809dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b865a00.css",
+    "static/js/main.ee2809dc.js"
+  ]
+}
