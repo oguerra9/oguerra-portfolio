@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/oguerra-portfolio/static/css/main.2b865a00.css",
-    "main.js": "/oguerra-portfolio/static/js/main.ee2809dc.js",
-    "static/media/distance-calculator-svg.svg": "/oguerra-portfolio/static/media/distance-calculator-svg.f2d994845e780aa609e6c6e9471ec8dd.svg",
+    "main.css": "/oguerra-portfolio/static/css/main.b62a56bd.css",
+    "main.js": "/oguerra-portfolio/static/js/main.636831e4.js",
+    "static/media/weather-app-image.png": "/oguerra-portfolio/static/media/weather-app-image.1bc2ddeb3eb07812be1e.png",
+    "static/media/distance-calculator-image.png": "/oguerra-portfolio/static/media/distance-calculator-image.3f5dd23cbfe4406d347e.png",
+    "static/media/task-manager-image.png": "/oguerra-portfolio/static/media/task-manager-image.79569e3cfafcbcf2ab05.png",
     "index.html": "/oguerra-portfolio/index.html",
-    "main.2b865a00.css.map": "/oguerra-portfolio/static/css/main.2b865a00.css.map",
-    "main.ee2809dc.js.map": "/oguerra-portfolio/static/js/main.ee2809dc.js.map"
+    "main.b62a56bd.css.map": "/oguerra-portfolio/static/css/main.b62a56bd.css.map",
+    "main.636831e4.js.map": "/oguerra-portfolio/static/js/main.636831e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b865a00.css",
-    "static/js/main.ee2809dc.js"
+    "static/css/main.b62a56bd.css",
+    "static/js/main.636831e4.js"
   ]
 }
