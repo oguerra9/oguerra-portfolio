@@ -1,8 +1,10 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
-import DistanceCalcImage from '../images/distance-calculator-svg.svg';
 
+const distanceCalculatorImg = require('../images/distance-calculator-image.png');
+const taskManagerImg = require('../images/task-manager-image.png');
+const weatherAppImg = require('../images/weather-app-image.png');
 
 export default function Projects() {
     const projectList = [
@@ -11,7 +13,7 @@ export default function Projects() {
             repo_link: 'https://github.com/oguerra9/distance-calculator-SL23',
             deploy_link: 'https://oguerra9.github.io/distance-calculator-SL23/',
             skills: 'JavaScript, Google Maps API',
-            imgSrc: '../images/distance-calculator-image.png',
+            imgSrc: distanceCalculatorImg,
             short_desc: 'Website used to calculate the distance between two geographic points and display the location of each.',
             long_desc:''
         },
@@ -20,7 +22,7 @@ export default function Projects() {
             repo_link: 'https://github.com/oguerra9/task-tracker',
             deploy_link: 'https://oguerra9.github.io/task-tracker/',
             skills: 'React, Google Firebase',
-            imgSrc: '../images/task-manager-image.png',
+            imgSrc: taskManagerImg,
             short_desc: 'Website for users to create, edit, and delete tasks.',
             long_desc: ''
         },
@@ -29,7 +31,7 @@ export default function Projects() {
             repo_link: 'https://github.com/oguerra9/weatherApp',
             deploy_link: 'https://oguerra9.github.io/weatherApp/',
             skills: 'JavaScript',
-            imgSrc: '../images/weather-app-image.png',
+            imgSrc: weatherAppImg,
             short_desc: 'Website where users can enter the name of a location and see the current weather as well as a 5 day forecast.',
             long_desc: ''
         }
@@ -48,19 +50,20 @@ export default function Projects() {
             <h1>Past Projects</h1>
             <Container id="projectDisplay" className="d-flex flex-wrap justify-content-center">
                 {projectList.map(project => (
-                    <Container id="projectItem" key={project.title} className="col-lg-5 m-4">
+                    <Container key={project.title} className="col-lg-5 m-4">
                         <Card className="bg-dark text-white" id='projectCard'>
                             <a href={project.deploy_link} target="_blank" rel="noreferrer" id="deployRef">
                                 {/* <Card.Img src={require('../images/task-manager-image.png')} alt="Card image" /> */}
                                 <Card.Img id="cardImg" src={project.imgSrc} alt="Card image" />
-                                <Card.ImgOverlay className="d-flex flex-column" style={{'backgroundColor':'purple', 'opacity':'0.75'}}>
+                                <Card.ImgOverlay className="d-flex flex-column" id='projectOverlay'>
+                                    <div id="projectInfo">
                                         <Card.Title>{project.title}</Card.Title>
                                         <Card.Text>{project.short_desc}</Card.Text>
                                         <Card.Text>{project.skills}</Card.Text>
+                                    </div>
                                         <a href={project.repo_link} target="_blank" rel="noreferrer" id="repoIcon">
                                             <img src={require("../images/github-mark-white.png")} id="githubIcon" alt="github icon"></img>
                                         </a>
-                                    
                                 </Card.ImgOverlay>
                             </a>
                         </Card>

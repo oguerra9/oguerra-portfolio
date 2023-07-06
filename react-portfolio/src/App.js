@@ -4,6 +4,8 @@ import NavBar from './components/NavBar';
 import Welcome from './pages/Welcome';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
 
@@ -24,12 +26,38 @@ function App() {
   };
 
 
+  // return (
+  //     <div className="flex-column justify-center align-center min-100-vh">
+  //       <NavBar handlePageChange={handlePageChange} />
+  //       {renderPage()}
+  //     </div>
+  // );
   return (
-      <div className="flex-column justify-center align-center min-100-vh">
-        <NavBar handlePageChange={handlePageChange} />
-        {renderPage()}
+    <Router>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route 
+            path="/" 
+            element={<Welcome />}
+          />
+          <Route 
+            path="/welcome" 
+            element={<Welcome />}
+          />
+          <Route 
+            path="/projects" 
+            element={<Projects />}
+          />
+          <Route 
+            path="/resume" 
+            element={<Resume />}
+          />
+        </Routes>
       </div>
+    </Router>
   );
+
 }
 
 export default App;
