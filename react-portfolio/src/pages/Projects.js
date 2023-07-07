@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 const distanceCalculatorImg = require('../images/distance-calculator-image.png');
 const taskManagerImg = require('../images/task-manager-image.png');
 const weatherAppImg = require('../images/weather-app-image.png');
-const yelpForCouplesImg = require('../images/yelp-for-couples.png');
+const yelpForCouplesImg = require('../images/yelp-for-couples-images.png');
 
 export default function Projects() {
     const projectList = [
