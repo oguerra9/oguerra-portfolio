@@ -81,8 +81,8 @@ function App() {
         </nav>
 
         <Routes>
-          <Route exact path="/welcome" element={<Welcome />}/>
-          <Route exact path="/projects" element={<Projects />}/>
+          <Route path="/welcome" element={<Welcome />}/>
+          <Route path="/projects" element={<Projects />}/>
           <Route path="/resume" element={<Resume />} />
           <Route path="/" element={<Welcome />} />
         </Routes>
