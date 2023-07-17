@@ -1,11 +1,13 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import NavBar from '../components/NavBar';
 
 const distanceCalculatorImg = require('../images/distance-calculator-image.png');
 const taskManagerImg = require('../images/task-manager-image.png');
 const weatherAppImg = require('../images/weather-app-image.png');
 const yelpForCouplesImg = require('../images/yelp-for-couples-image.png');
+const choreChartImg = require('../images/chore-chart-image.png');
 
 export default function Projects() {
     const projectList = [
@@ -44,6 +46,15 @@ export default function Projects() {
             imgSrc: yelpForCouplesImg,
             short_desc: 'Website to help couples or groups decide what to eat and where.',
             long_desc: ''
+        },
+        {
+            title: 'Chore Chart',
+            repo_link: 'https://github.com/oguerra9/chore-chart',
+            deploy_link: 'https://oguerra9.github.io/chore-chart/#/calendar/3',
+            skills: 'React',
+            imgSrc: choreChartImg,
+            short_desc: 'Team project to help manage household chores between roommates',
+            long_desc: ''
         }
         // {
         //     title: '',
@@ -56,9 +67,11 @@ export default function Projects() {
         // }
     ]
     return (
-        <Container>
+        <>
+        <NavBar />
+        <div>
             <h1>Past Projects</h1>
-            <Container id="projectDisplay" className="d-flex flex-wrap justify-content-center">
+            <div id="projectDisplay" className="d-flex flex-wrap justify-content-center">
                 {projectList.map(project => (
                     <Container key={project.title} className="col-lg-5 m-4">
                         <Card className="bg-dark text-white" id='projectCard'>
@@ -79,7 +92,8 @@ export default function Projects() {
                         </Card>
                     </Container>
                 ))}
-            </Container>
-        </Container>
+            </div>
+        </div>
+        </>
     );
 }

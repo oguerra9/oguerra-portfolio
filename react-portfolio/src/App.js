@@ -66,7 +66,7 @@ function App() {
 
   return (
       <HashRouter basename="/">
-        <nav>
+        {/* <nav>
           <div className='d-flex'>
             <div className='m-2'>
               <Link to="/welcome">Welcome</Link>
@@ -78,7 +78,7 @@ function App() {
               <Link to="/resume">Resume</Link>
             </div>
           </div>
-        </nav>
+        </nav> */}
 
         <Routes>
           <Route path="/welcome" element={<Welcome />}/>

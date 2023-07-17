@@ -98,31 +98,53 @@
   opacity: 0;
 }
 
+#resumeContainer {
+  margin: 12%;
+  margin-top: 2%;
+  border: 3px solid navy;
+}
 
+#resumeNameHeader {
+  /* font-size: 24px; */
+  background-color: lightgray;
+  color: navy;
+  /* font-weight: bolder; */
+  border-bottom: 2px solid navy; 
+}
 
-  /* background:
-    radial-gradient(
-        rgba(0,255,0,.8),
-        black
-    ),
-    repeating-linear-gradient(
-        transparent 0,
-        rgba(0,0,0,.2) 3px,
-        transparent 6px
-    );
-  background-blend-mode: overlay;
-  background-size: cover; */
+#resumeTitle {
+  background-color: navy;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
 
+#resumeSection {
+  border: 2px solid navy;
+}
+
+#sectionHeader {
+  font-size: 18px;
+  border-bottom: 1px solid navy;
+}
+
+#itemTitle {
+  font-weight: bold;
+}
+
+#navbarContainer {
+  background-color: navy;
+  padding: 1%;
+}
+
+/*
+#navbarItemContainer {
   
-  /* div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-  }
-  
-  @keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-  } */
+}
+*/
+
+#navbarItem {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
