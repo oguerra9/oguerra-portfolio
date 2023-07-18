@@ -66,25 +66,11 @@ function App() {
 
   return (
       <HashRouter basename="/">
-        {/* <nav>
-          <div className='d-flex'>
-            <div className='m-2'>
-              <Link to="/welcome">Welcome</Link>
-            </div>
-            <div className='m-2'>
-              <Link to="/projects">Projects</Link>
-            </div>
-            <div className='m-2'>
-              <Link to="/resume">Resume</Link>
-            </div>
-          </div>
-        </nav> */}
-
         <Routes>
-          <Route path="/welcome" element={<Welcome />}/>
+          {/* <Route path="/welcome" element={<Welcome />}/> */}
           <Route path="/projects" element={<Projects />}/>
           <Route path="/resume" element={<Resume />} />
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Projects />} />
         </Routes>
       </HashRouter>
   );

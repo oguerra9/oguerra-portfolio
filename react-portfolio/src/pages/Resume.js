@@ -16,26 +16,18 @@ export default function Resume() {
     */
 
     // Atlanta, Georgia | (404)632-5450 | oliviaguerra731@gmail.com |linkedin.com/in/olivia-guerra-069951220/ | github.com/oguerra9 | Portfolio: oguerra9.github.io/oguerra-portfolio/
+    let contactInfo = ['Atlanta, GA', '(404)632-5450', 'oliviaguerra731@gmail.com'];
     let resumeLinks = [
         {
-            display: 'Atlanta, GA'
-        },
-        {
-            display: '(404)632-5450'
-        },
-        {
-            display: 'oliviaguerra731@gmail.com'
-        },
-        {
-            display: 'linkedin.com/in/olivia-guerra-069951220/',
+            display: 'LinkedIn',
             link: 'https://linkedin.com/in/olivia-guerra-069951220/'   
         },
         {
-            display: 'github.com/oguerra9',
+            display: 'Github',
             link: 'https://github.com/oguerra9'
         },
         {
-            display: 'Portfolio: oguerra9.github.io/oguerra-portfolio/',
+            display: 'Portfolio',
             link: 'https://oguerra9.github.io/oguerra-portfolio'
         }
     ];
@@ -127,16 +119,20 @@ export default function Resume() {
         <>
             <NavBar />
             <div id="resumeContainer">
-                <h1 id="resumeNameHeader" className="p-2">Olivia Guerra</h1>
-                <div id="resumeLinks" className='d-flex flex-wrap p-1'>
-                    {resumeLinks.map(item => (
-                        (item.hasOwnProperty('link') ? (
+                <h1 id="resumeNameHeader" className="p-2 mb-0">Olivia Guerra</h1>
+                <div id="infoBar" className="d-flex col-12">
+                    <div id="contactInfo" className="d-flex flex-wrap p-1 col-6">
+                        {contactInfo.map(contactItem => (
+                            <div className='p-1'> | {contactItem}</div>
+                        ))}
+                    </div>
+                    <div id="resumeLinks" className='d-flex flex-wrap p-1 justify-content-end col-6'>
+                        {resumeLinks.map(item => (
                             <div id="linkItem" className="p-1">| <a href={item.link}>{item.display}</a> </div>
-                        ) : (
-                            <div id="linkItem" className="p-1">| {item.display} </div>
-                        ))
-                    ))}
+                        ))}
+                    </div>
                 </div>
+                
                 <div id="resumeTitle" className="p-2 d-flex justify-content-center">Software Engineer</div>
                 {sectionHeaders.map(sectionName => (
                     <div id='resumeSection' className="p-1">
@@ -149,7 +145,7 @@ export default function Resume() {
                                                 <div id="itemTitle" className='d-flex p-1 align-self-center'>{contentItem.headerName}:</div>
                                                 <div id="itemDetails" className='d-flex p-1'>
                                                     {contentItem.headerDetails.map(detail => (
-                                                        <div id="itemDetail"> {detail}</div>
+                                                        <div id="itemDetail">{` ${detail} `}</div>
                                                     ))}
                                                 </div>
                                             </div>
@@ -165,7 +161,7 @@ export default function Resume() {
                                                 <div id="itemTitle" className='d-flex p-1 align-self-center'>{contentItem.headerName}</div>
                                                 <div id="itemDetails" className='d-flex p-1'>
                                                     {contentItem.headerDetails.map(detail => (
-                                                        <div id="itemDetail"> | {detail} </div>
+                                                        <div id="itemDetail">{` | ${detail} `}</div>
                                                     ))}
                                                 </div>
                                             </div>

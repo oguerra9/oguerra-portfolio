@@ -12,30 +12,12 @@ const choreChartImg = require('../images/chore-chart-image.png');
 export default function Projects() {
     const projectList = [
         {
-            title: 'Distance Calculator',
-            repo_link: 'https://github.com/oguerra9/distance-calculator-SL23',
-            deploy_link: 'https://oguerra9.github.io/distance-calculator-SL23/',
-            skills: 'JavaScript, Google Maps API',
-            imgSrc: distanceCalculatorImg,
-            short_desc: 'Website used to calculate the distance between two geographic points and display the location of each.',
-            long_desc:''
-        },
-        {
-            title: 'Task Manager',
-            repo_link: 'https://github.com/oguerra9/task-tracker',
-            deploy_link: 'https://oguerra9.github.io/task-tracker/',
-            skills: 'React, Google Firebase',
-            imgSrc: taskManagerImg,
-            short_desc: 'Website for users to create, edit, and delete tasks.',
-            long_desc: ''
-        },
-        {
-            title: 'Weather App',
-            repo_link: 'https://github.com/oguerra9/weatherApp',
-            deploy_link: 'https://oguerra9.github.io/weatherApp/',
-            skills: 'JavaScript',
-            imgSrc: weatherAppImg,
-            short_desc: 'Website where users can enter the name of a location and see the current weather as well as a 5 day forecast.',
+            title: 'Chore Chart',
+            repo_link: 'https://github.com/oguerra9/chore-chart',
+            deploy_link: 'https://oguerra9.github.io/chore-chart/#/calendar/3',
+            skills: 'React',
+            imgSrc: choreChartImg,
+            short_desc: 'Team project to help manage household chores between roommates',
             long_desc: ''
         },
         {
@@ -48,14 +30,33 @@ export default function Projects() {
             long_desc: ''
         },
         {
-            title: 'Chore Chart',
-            repo_link: 'https://github.com/oguerra9/chore-chart',
-            deploy_link: 'https://oguerra9.github.io/chore-chart/#/calendar/3',
-            skills: 'React',
-            imgSrc: choreChartImg,
-            short_desc: 'Team project to help manage household chores between roommates',
+            title: 'Task Manager',
+            repo_link: 'https://github.com/oguerra9/task-tracker',
+            deploy_link: 'https://oguerra9.github.io/task-tracker/',
+            skills: 'React, Google Firebase',
+            imgSrc: taskManagerImg,
+            short_desc: 'Website for users to create, edit, and delete tasks.',
+            long_desc: ''
+        },
+        {
+            title: 'Distance Calculator',
+            repo_link: 'https://github.com/oguerra9/distance-calculator-SL23',
+            deploy_link: 'https://oguerra9.github.io/distance-calculator-SL23/',
+            skills: 'JavaScript, Google Maps API',
+            imgSrc: distanceCalculatorImg,
+            short_desc: 'Website used to calculate the distance between two geographic points and display the location of each.',
+            long_desc:''
+        },
+        {
+            title: 'Weather App',
+            repo_link: 'https://github.com/oguerra9/weatherApp',
+            deploy_link: 'https://oguerra9.github.io/weatherApp/',
+            skills: 'JavaScript',
+            imgSrc: weatherAppImg,
+            short_desc: 'Website where users can enter the name of a location and see the current weather as well as a 5 day forecast.',
             long_desc: ''
         }
+        
         // {
         //     title: '',
         //     repo_link: '',
@@ -65,12 +66,13 @@ export default function Projects() {
         //     short_desc: '',
         //     long_desc: ''
         // }
-    ]
+    ];
+
     return (
         <>
         <NavBar />
         <div>
-            <h1>Past Projects</h1>
+            <h1 className='p-2'>Past Projects</h1>
             <div id="projectDisplay" className="d-flex flex-wrap justify-content-center">
                 {projectList.map(project => (
                     <Container key={project.title} className="col-lg-5 m-4">
